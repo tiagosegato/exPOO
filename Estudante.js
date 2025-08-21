@@ -1,17 +1,3 @@
-/*
-//Roteiro das Aulas
-Estudante
-Professor
-Estatico
-Disciplina
-Turma
-Nota
-Matricula
-EstudantePrivado
-PessoaestudanteProfessor
-PessoaFuncionario
-*/
-
 import { Disciplina } from "./Disciplina";
 import { Nota } from "./Nota";
 
