@@ -52,5 +52,10 @@ A ordem sugerida dos exmplos é:
 - Compreender e utilizar a função super() para chamar o construtor da classe pai.
 - Reaproveitar e sobrescrever métodos da classe pai (Polimorfismo).
 
-10 - PessoaFuncionario.js
+10 - Abstratas.js
+ - Exemplo de Classes abstratas
+ - Criar uma classe modelo que não pode ser instanciada com um método abstrato
+ - E criação da classe que implementa essa abstração 
+
+11 - PessoaFuncionario.js
 - Exercício prático para aplicação dos conceitos de Herança e Polimorfismo em JS

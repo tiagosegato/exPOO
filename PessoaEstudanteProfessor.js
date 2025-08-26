@@ -71,9 +71,16 @@ const pessoaComum = new Pessoa("José Ninguém", "1980-01-01", "111.222.333-44")
 const estudanteJoana = new Estudante("Joana D'arc", "2005-05-05", "555.666.777-88", "E2023005");
 const profTiago = new Professor("Tiago Segato", "1975-10-10", "999.888.777-66", "P00JS");
 
+// Exemplo de Polimorfismo
 pessoaComum.apresentar();    // "Olá, meu nome é José Ninguém."
 estudanteJoana.apresentar(); // "Olá, eu sou o estudante Joana D'arc de matrícula E2023005."
 profTiago.apresentar();    // "Olá, meu nome é Tiago Segato." (usou o método da classe Pessoa)
 
 console.log(`${estudanteJoana.nome} tem o CPF: ${estudanteJoana.cpf}`); // Acessando getter herdado
 */
+
+// POLIMORFISMO
+// "Muitas formas". A capacidade de um método se comportar de maneira diferente dependendo do objeto que o invoca.
+// Vimos isso com o método apresentar(). A mesma chamada (pessoa.apresentar()) produziu resultados diferentes 
+// para um Estudante e para uma Pessoa ou Professor.
+// Permite escrever código mais genérico e flexível. 
