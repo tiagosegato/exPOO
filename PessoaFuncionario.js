@@ -45,7 +45,7 @@ class Funcionario extends Pessoa {
         // controlada dos atributos cargo e #salario.        
         this.cargo = novoCargo;
         this.#salario = novoSalario;
-        console.log(`${this.nome} foi promovido(a) para ${this.cargo} com sucesso!`);
+        console.log(`${this.nome}, ${this.cpf} foi promovido(a) para ${this.cargo} com sucesso!`);
     }
 }
 
@@ -58,7 +58,7 @@ console.log(`Cargo atual: ${ana.cargo}`);
 console.log(`Salário inicial: R$ ${ana.salario}`);
 
 // Tentativa de acesso direto ao atributo privado (irá gerar um erro se descomentado)
-// console.log(ana.#salario); // SyntaxError: Private field '#salario' must be declared in an enclosing class
+//console.log(ana.#salario); // SyntaxError: Private field '#salario' must be declared in an enclosing class
 
 console.log("\n--- Promovendo a funcionária ---");
 // Usando o método promover para atualizar cargo e salário

@@ -38,7 +38,8 @@ class Matricula {
     adicionarNota(valor, descricao) {
         const novaNota = new Nota(valor, descricao); // A 'Parte' é criada aqui dentro
         this.notas.push(novaNota);
-        console.log(`Nota "${descricao}" (${valor}) adicionada para ${this.estudante.nome} em ${this.disciplina.nome}.`);
+        console.log(`Nota "${descricao}" (${valor}) adicionada para ${this.estudante.nome} 
+            em ${this.disciplina.nome}.`);
     }
 
     calcularMedia() {

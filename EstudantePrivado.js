@@ -1,7 +1,8 @@
 //Encapsulamento: Protegendo seus Dados
 //Agrupar dados (atributos) e os métodos que operam nesses dados dentro de um único objeto.
 //Esconder os detalhes internos de implementação e proteger a integridade dos dados.
-//Exemplo: Não queremos que alguém possa atribuir uma nota negativa a um aluno (joao.notas.push(-5)). O acesso deve ser controlado.
+//Exemplo: Não queremos que alguém possa atribuir uma nota negativa a um aluno 
+// (joao.notas.push(-5)). O acesso deve ser controlado.
 
 //Campos Privados: sintaxe #nomeDoAtributo. Introduzido no ES2022.
 //Um atributo declarado com # só pode ser acessado ou modificado por métodos da própria classe.
@@ -71,10 +72,9 @@ const joao = new EstudantePrivado("João Encapsulado da Silva", "E2023001");
 console.log(joao.nome); // Usa o getter 'get nome()'
 joao.adicionarNota(9);
 joao.adicionarNota(8);
-joao.adicionarNota(-3); // Mostra o erro
+//joao.adicionarNota(-3); // Mostra o erro
 
 console.log(joao.notas); // Usa o getter 'get notas()', obtendo uma cópia segura
-
 console.log("Média do João:", joao.calcularMedia());
 
 console.log("\n--- Testando o Setter de Nome ---");
@@ -82,6 +82,5 @@ console.log(`Nome atual: ${joao.nome}`);
 
 // A sintaxe é como se estivéssemos atribuindo a uma propriedade normal, mas o JS chama o 'set nome()'
 joao.nome = "João da Silva Sauro";
-
 console.log(`Nome novo: ${joao.nome}`); // O nome foi alterado com sucesso
 */

@@ -1,5 +1,5 @@
-import { Disciplina } from "./Disciplina";
-import { Nota } from "./Nota";
+import { Disciplina } from "./Disciplina.js";
+import { Nota } from "./Nota.js";
 
 // A "planta" para todos os estudantes
 export class Estudante {

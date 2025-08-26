@@ -8,7 +8,7 @@ Instancie uma turma "2025/1" e adicione os objetos Lógica JS e Javascript POO
 (criados anteriormente) a ela.
 */
 
-import { Disciplina } from './Disciplina.js'
+import { Disciplina } from './Disciplina.mjs'
 
 class Turma {
     constructor(ano, semestre, codigoTurma) {
@@ -28,7 +28,7 @@ class Turma {
     }
 
     listarDisciplinas() {
-        console.log(`\n--- Disciplinas da Turma ${this.codigoTurma} (${this.ano}/${this.semestre}) ---`);
+        console.log(`\n- Disciplinas da Turma ${this.codigoTurma} (${this.ano}/${this.semestre}) -`);
         this.disciplinas.forEach(disc => {
             console.log(`- ${disc.nome} (Código: ${disc.codigo})`);
         });
@@ -43,6 +43,8 @@ const jspoo = new Disciplina("Javascript POO", "POO202", 24);
 
 // Instanciando uma turma "2025/1"
 const turma2025_1 = new Turma(2025, 1, "T1-2025");
+
+console.log(turma2025_1)
 
 // Adicionando as disciplinas a ela.
 turma2025_1.adicionarDisciplina(logica);

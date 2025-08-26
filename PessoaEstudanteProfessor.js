@@ -49,7 +49,9 @@ class Estudante extends Pessoa {
     }
 
     // Métodos específicos de Estudante...
-    adicionarNota(nota) { this.notas.push(nota); }
+    adicionarNota(nota) {
+        this.notas.push(nota);
+    }
 }
 
 // Subclasse Professor
