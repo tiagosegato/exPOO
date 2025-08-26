@@ -62,7 +62,6 @@ class Professor extends Pessoa {
         this.idFuncional = idFuncional;
         this.disciplinas = [];
     }
-
     // Herdando o método apresentar() original da Pessoa, sem sobrescrever
 }
 

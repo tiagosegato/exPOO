@@ -38,12 +38,10 @@ class Livro extends RecursoDidatico {
     }
 }
 
-// const recurso = new RecursoDidatico("Genérico"); // Lança o erro!
+//const recurso = new RecursoDidatico("Genérico"); // Lança o erro!
 
 const livroPOO = new Livro("POO Descomplicada", "Dr. Código");
 console.log(livroPOO)
 
-const recurso = livroPOO
-
-console.log(recurso.exibir())
+livroPOO.exibir()
 

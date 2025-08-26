@@ -1,10 +1,12 @@
 /*
 EXERCÍCIO
 Crie uma nova classe Funcionario que herda de Pessoa.
-A classe Funcionario deve ter, além dos atributos de Pessoa (nome, dataNascimento, cpf), um cargo e um salario. 
+A classe Funcionario deve ter, além dos atributos de Pessoa (nome, dataNascimento, cpf), 
+um cargo e um salario. 
 O salário deve ser um atributo privado.
 Crie um getter para o salário.
-Crie um método promover(novoCargo, novoSalario) que atualiza o cargo e o salário (o setter implícito).
+Crie um método promover(novoCargo, novoSalario) que atualiza o cargo e o salário 
+(o setter implícito).
 */
 
 class Pessoa {
