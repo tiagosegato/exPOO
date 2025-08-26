@@ -1,4 +1,9 @@
-Exemplos Práticos de POO utilizando Javascript
+Exemplos Práticos de POO utilizando Javascript.
+
+Dica, para usar as classes criadas como módulos uma das outras (import e export) é necessário configurar o projeto como um module.
+Para isso crie um arquivo de configurações package.json dentro da pasta do projeto por meio do comando: npm init -y.
+Em seguida adicione a seguinte informação depois do item main (linha 4 ou 5): "type": "module",.
+Outra opção é salvar todos os arquivos (módulos) com a extensão .mjs.
 
 A ordem sugerida dos exmplos é:
 
