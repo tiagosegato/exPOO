@@ -47,7 +47,6 @@ class Disciplina {
         console.log(`Estudante ${estudante.nome} matriculado com sucesso.`);
     }
 }
-
 // --- Usando o código ---
 const poo = new Disciplina("Programação Orientada a Objetos");
 const joana = new Estudante("Joana", "2005-05-05", "555", "E2023005");

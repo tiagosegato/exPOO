@@ -35,7 +35,6 @@ class Funcionario extends Pessoa {
         this.#salario = salario;
     }
 
-
     //Getter para o salário.
     get salario() {
         return this.#salario;
@@ -53,18 +52,17 @@ class Funcionario extends Pessoa {
 
 /*
 const ana = new Funcionario("Ana Pereira", "1990-05-20", "123.456.789-00", "Analista Jr.", 4000.00);
-
 console.log(`Cargo atual: ${ana.cargo}`);
 
 // Acessando o salário através do getter
 console.log(`Salário inicial: R$ ${ana.salario}`);
 
 // Tentativa de acesso direto ao atributo privado (irá gerar um erro se descomentado)
-//console.log(ana.#salario); // SyntaxError: Private field '#salario' must be declared in an enclosing class
+// console.log(ana.#salario); // SyntaxError: Private field '#salario' must be declared in an enclosing class
 
 console.log("\n--- Promovendo a funcionária ---");
 // Usando o método promover para atualizar cargo e salário
-ana.promover("Analista Pleno", 5500.00);
+ana.promover("Analista Pleno", 7500.00);
 
 console.log(`Novo cargo: ${ana.cargo}`);
 console.log(`Novo salário: R$ ${ana.salario}`); // Usando o getter novamente para ver o valor atualizado

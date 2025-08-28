@@ -4,6 +4,7 @@
 // É uma classe que não pode ser instanciada diretamente. Ela serve como um "contrato" ou um modelo (para ser extendida) 
 // para suas subclasses. Geralmente utilizado em herança (as superclasses).
 // Pode conter métodos abstratos (sem implementação), que devem ser implementados pelas subclasses.
+
 // Classe abstrata só faz sentido em casos de herança, mas não quer dizer que toda superclasse seja abstrata, 
 // pode ser que ela se relacione também de outras formas com outras classes.
 // Ou seja, nem toda superclasse precisa ser abstrata. Mas classe abstrata sempre é usada em herança.
@@ -37,11 +38,11 @@ class Livro extends RecursoDidatico {
         console.log(`Livro: ${this.nome}, de ${this.autor}`);
     }
 }
-
-//const recurso = new RecursoDidatico("Genérico"); // Lança o erro!
+/*
+// const recurso = new RecursoDidatico("Genérico"); // Lança o erro!
 
 const livroPOO = new Livro("POO Descomplicada", "Dr. Código");
 console.log(livroPOO)
 
 livroPOO.exibir()
-
+*/
