@@ -3,11 +3,10 @@
 
 // A "planta" para todos os estudantes
 export class Estudante {
-
-    nome
-    matricula
-    dataNascimento
-    notas
+    nome;
+    matricula;
+    dataNascimento;
+    notas;
 
     // O construtor é o primeiro método a ser executado
     constructor(nome, matricula, dataNascimento) {
@@ -32,12 +31,11 @@ export class Estudante {
         if (this.notas.length === 0) {
             return 0;
         }
-        const soma = this.notas.reduce((acc, nota) => acc + nota, 0);
+        const soma = this.notas.reduce((acc, nota) => acc + nota, 0); // acumulador, nota e valor inicial
         return (soma / this.notas.length).toFixed(2);
     }
 }
 
-/*
 // Criando instâncias (objetos) a partir da classe
 const joao = new Estudante("João Silva", "2026001", "2005-03-15");
 const maria = new Estudante("Maria Souza", "2026002", "2006-07-20");
@@ -50,7 +48,11 @@ joao.adicionarNota(9.5);
 maria.adicionarNota(10);
 maria.adicionarNota(7);
 
+console.log(joao);
+
 console.log(`Notas do João: ${joao.notas}`);
+
 console.log(`Média da Maria: ${maria.calcularMedia()}`);
 console.log(`Média do João: ${joao.calcularMedia()}`);
+/*
 */

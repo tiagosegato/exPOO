@@ -7,6 +7,11 @@ Instanciar dois professores e atribuir duas disciplinas a eles.
 */
 
 export class Professor {
+
+    nome;
+    idFuncional;
+    disciplinas;
+
     constructor(nome, idFuncional) {
         this.nome = nome
         this.idFuncional = idFuncional
@@ -19,7 +24,6 @@ export class Professor {
     }
 }
 
-/*
 const profTiago = new Professor('Tiago', '1234567')
 const profSegato = new Professor('Segato', '0987654')
 
@@ -32,6 +36,7 @@ profSegato.atribuirDisciplinas('JS POO')
 profSegato.atribuirDisciplinas('Node JS')
 
 console.log(profSegato)
+/*
 */
 
 
