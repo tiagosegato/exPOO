@@ -1,8 +1,14 @@
-import { Disciplina } from "./Disciplina.js";
-import { Nota } from "./Nota.js";
+//import { Disciplina } from "./Disciplina.js";
+//import { Nota } from "./Nota.js";
 
 // A "planta" para todos os estudantes
 export class Estudante {
+
+    nome
+    matricula
+    dataNascimento
+    notas
+
     // O construtor é o primeiro método a ser executado
     constructor(nome, matricula, dataNascimento) {
         // 'this' se refere à instância atual do objeto que está sendo criado
