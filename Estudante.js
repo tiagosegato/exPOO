@@ -39,8 +39,8 @@ export class Estudante {
 
 /*
 // Criando instâncias (objetos) a partir da classe
-const joao = new Estudante("João Silva", "2023001", "2005-03-15");
-const maria = new Estudante("Maria Souza", "2023002", "2006-07-20");
+const joao = new Estudante("João Silva", "2026001", "2005-03-15");
+const maria = new Estudante("Maria Souza", "2026002", "2006-07-20");
 
 console.log(joao.nome);
 console.log(maria.matricula);
