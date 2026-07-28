@@ -41,7 +41,7 @@ export class Disciplina {
         });
         console.log("----------------------------------------------\n");
     }
-}
+}//fim classe
 
 /*
 // Instanciando e conectando tudo
@@ -67,7 +67,7 @@ logica.matricularEstudante(maria);
 jspoo.matricularEstudante(maria);
 jspoo.matricularEstudante(pedro);
 
-//console.log(jspoo) //Exibe um array de objetos estudantes nessa disciplina
+//console.log(logica) //Exibe um array de objetos estudantes nessa disciplina
 
 // Verificando as interações
 console.log(`A disciplina de ${logica.nome} é lecionada por ${logica.professor.nome}`);
