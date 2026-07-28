@@ -37,6 +37,7 @@ export class Estudante {
 }
 
 // Criando instâncias (objetos) a partir da classe
+/*
 const joao = new Estudante("João Silva", "2026001", "2005-03-15");
 const maria = new Estudante("Maria Souza", "2026002", "2006-07-20");
 
@@ -54,5 +55,4 @@ console.log(`Notas do João: ${joao.notas}`);
 
 console.log(`Média da Maria: ${maria.calcularMedia()}`);
 console.log(`Média do João: ${joao.calcularMedia()}`);
-/*
 */

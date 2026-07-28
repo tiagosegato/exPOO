@@ -1,7 +1,7 @@
 //AGREGAÇÃO
 // Criar a classe Disciplina e fazer ela se relacionar com Professor e Estudante.
 
-// Para usar Professor aqui é necessário Exportar lá (Professor) e Importar aqui:
+// Para usar Professor e Estudante aqui é necessário Exportar lá (Classes) e Importar aqui:
 import { Professor } from './Professor.js'
 import { Estudante } from './Estudante.js'
 
@@ -55,6 +55,8 @@ const pedro = new Estudante("Pedro Alves", "2023003", "2004-11-10");
 const logica = new Disciplina("Lógica JS", "LOG101", 24);
 const jspoo = new Disciplina("Javascript POO", "POO202", 24);
 
+//console.log(logica)// Já foi criado a disciplina, mas sem professor, nem estudante.
+
 // Realizando as associações
 logica.atribuirProfessor(profTiago);
 jspoo.atribuirProfessor(profSegato);
@@ -64,6 +66,8 @@ logica.matricularEstudante(maria);
 
 jspoo.matricularEstudante(maria);
 jspoo.matricularEstudante(pedro);
+
+//console.log(jspoo) //Exibe um array de objetos estudantes nessa disciplina
 
 // Verificando as interações
 console.log(`A disciplina de ${logica.nome} é lecionada por ${logica.professor.nome}`);

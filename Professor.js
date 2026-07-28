@@ -24,6 +24,7 @@ export class Professor {
     }
 }
 
+/*
 const profTiago = new Professor('Tiago', '1234567')
 const profSegato = new Professor('Segato', '0987654')
 
@@ -36,7 +37,6 @@ profSegato.atribuirDisciplinas('JS POO')
 profSegato.atribuirDisciplinas('Node JS')
 
 console.log(profSegato)
-/*
 */
 
 

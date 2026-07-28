@@ -4,11 +4,11 @@ Criar uma nova classe Turma.
 A Turma deve ter ano, semestre e um codigoTurma.
 A Turma deve ter uma lista de disciplinas(agregação).
 Crie um método adicionarDisciplina(disciplina) na classe Turma.
-Instancie uma turma "2025/1" e adicione os objetos Lógica JS e Javascript POO
+Instancie uma turma "2026/1" e adicione os objetos Lógica JS e Javascript POO
 (criados anteriormente) a ela.
 */
 
-import { Disciplina } from './Disciplina.mjs'
+import { Disciplina } from './Disciplina.js'
 
 class Turma {
     constructor(ano, semestre, codigoTurma) {
@@ -41,18 +41,18 @@ class Turma {
 const logica = new Disciplina("Lógica JS", "LOG101", 24);
 const jspoo = new Disciplina("Javascript POO", "POO202", 24);
 
-// Instanciando uma turma "2025/1"
-const turma2025_1 = new Turma(2025, 1, "T1-2025");
+// Instanciando uma turma "2026/1"
+const turma2026_1 = new Turma(2026, 1, "T1-2026");
 
-console.log(turma2025_1)
+console.log(turma2026_1)
 
 // Adicionando as disciplinas a ela.
-turma2025_1.adicionarDisciplina(logica);
-turma2025_1.adicionarDisciplina(jspoo);
+turma2026_1.adicionarDisciplina(logica);
+turma2026_1.adicionarDisciplina(jspoo);
 
 // Verificação do resultado - Objeto Turma
-console.log(turma2025_1);
+console.log(turma2026_1);
 
 // Verificando com o método de listagem
-turma2025_1.listarDisciplinas();
+turma2026_1.listarDisciplinas();
 */
