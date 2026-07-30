@@ -12,6 +12,7 @@ As notas não são criadas fora e depois "adicionadas"; elas são criadas pela p
 */
 
 export class Nota {
+
     constructor(valor, descricao) {
         this.valor = valor
         this.descricao = descricao

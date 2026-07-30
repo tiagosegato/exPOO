@@ -36,7 +36,6 @@ class Turma {
     }
 }
 
-/*
 // Criando os objetos de disciplina 
 const logica = new Disciplina("Lógica JS", "LOG101", 24);
 const jspoo = new Disciplina("Javascript POO", "POO202", 24);
@@ -55,4 +54,5 @@ console.log(turma2026_1);
 
 // Verificando com o método de listagem
 turma2026_1.listarDisciplinas();
+/*
 */
