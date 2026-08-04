@@ -29,6 +29,13 @@ class EstudantePrivado {
         return this.#nome
     }
 
+    // Setter para o nome (permite a alteração direta do valor)
+    set nome(novoNome) {
+        // Poderia ter alguma validação para proteger melhor o atributo.
+        // Este setter simplesmente atribui o novo valor ao atributo privado.
+        this.#nome = novoNome;
+    }
+
     get matricula() {
         return this.#matricula
     }
@@ -37,12 +44,6 @@ class EstudantePrivado {
         return [...this.#notas]
         // Retorna uma cópia do array usando a Sintaxe de Espalhamento (...)
         //"pega" todos os elementos de um array (ou propriedades de um objeto) e "espalha" em um novo local.
-    }
-
-    // Setter para o nome (permite a alteração direta do valor)
-    set nome(novoNome) {
-        // Este setter simplesmente atribui o novo valor ao atributo privado.
-        this.#nome = novoNome;
     }
 
     // Métodos públicos que manipulam o array privado
@@ -61,7 +62,6 @@ class EstudantePrivado {
     }
 }
 
-/*
 const joao = new EstudantePrivado("João Encapsulado da Silva", "E2023001");
 
 // Acesso direto agora causa um erro!
@@ -72,7 +72,7 @@ const joao = new EstudantePrivado("João Encapsulado da Silva", "E2023001");
 console.log(joao.nome); // Usa o getter 'get nome()'
 joao.adicionarNota(9);
 joao.adicionarNota(8);
-//joao.adicionarNota(-3); // Mostra o erro
+joao.adicionarNota(-3); // Mostra o erro
 
 console.log(joao.notas); // Usa o getter 'get notas()', obtendo uma cópia segura
 console.log("Média do João:", joao.calcularMedia());
@@ -83,4 +83,5 @@ console.log(`Nome atual: ${joao.nome}`);
 // A sintaxe é como se estivéssemos atribuindo a uma propriedade normal, mas o JS chama o 'set nome()'
 joao.nome = "João da Silva Sauro";
 console.log(`Nome novo: ${joao.nome}`); // O nome foi alterado com sucesso
+/*
 */
