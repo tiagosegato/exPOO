@@ -12,6 +12,8 @@
 
 // Classe Base (Superclasse)
 class Pessoa {
+    nome
+    dataNascimento
     #cpf; // Atributo privado
 
     constructor(nome, dataNascimento, cpf) {
@@ -43,14 +45,15 @@ class Estudante extends Pessoa {
         this.notas = [];
     }
 
-    // Sobrescrevendo o método da classe pai
-    apresentar() {
-        console.log(`Olá, eu sou o estudante ${this.nome} de matrícula ${this.matricula}.`);
-    }
-
     // Métodos específicos de Estudante...
     adicionarNota(nota) {
         this.notas.push(nota);
+    }
+
+    // Sobrescrevendo o método da classe pai
+    apresentar() {
+        console.log(`Olá, eu sou o estudante ${this.nome} de 
+            matrícula ${this.matricula}.`);
     }
 }
 
@@ -59,6 +62,7 @@ class Professor extends Pessoa {
 
     constructor(nome, dataNascimento, cpf, idFuncional) {
         super(nome, dataNascimento, cpf);
+
         this.idFuncional = idFuncional;
         this.disciplinas = [];
     }
@@ -69,6 +73,14 @@ class Professor extends Pessoa {
 const pessoaComum = new Pessoa("José Ninguém", "1980-01-01", "111.222.333-44");
 const estudanteJoana = new Estudante("Joana D'arc", "2005-05-05", "555.666.777-88", "E2023005");
 const profTiago = new Professor("Tiago Segato", "1975-10-10", "999.888.777-66", "P00JS");
+
+// Verificando a Herança dos atributos
+console.log(pessoaComum)
+console.log(estudanteJoana)
+console.log(profTiago)
+
+// Consultando o dado Encapsulado
+console.log(profTiago.cpf)
 
 // Exemplo de Polimorfismo
 pessoaComum.apresentar();    // "Olá, meu nome é José Ninguém."
