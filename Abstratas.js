@@ -11,7 +11,7 @@
 // Em JavaScript: Não existe a palavra-chave abstract. Simulamos esse comportamento, por exemplo, 
 // lançando um erro no construtor da classe base se ela for instanciada diretamente.
 
-//Exemplo
+//Exemplo Classe Abstrata
 class RecursoDidatico {
     constructor(nome) {
         // Esta verificação impede que a classe seja instanciada diretamente
@@ -38,6 +38,7 @@ class Livro extends RecursoDidatico {
         console.log(`Livro: ${this.nome}, de ${this.autor}`);
     }
 }
+
 /*
 // const recurso = new RecursoDidatico("Genérico"); // Lança o erro!
 
