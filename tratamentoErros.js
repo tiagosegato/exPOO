@@ -40,20 +40,29 @@ class Disciplina {
             // Lançando um erro em vez de só logar no console
             throw new TypeError("Parâmetro inválido. Esperado uma instância de Estudante.");
         }
-        if (this.#estudantesMatriculados.length >= 50) {
+        if (this.#estudantesMatriculados.length >= 2) {
             throw new Error(`Matrícula não permitida. Turma de ${this.#nome} está lotada.`);
         }
         this.#estudantesMatriculados.push(estudante);
         console.log(`Estudante ${estudante.nome} matriculado com sucesso.`);
     }
 }
+
+
+/*
 // --- Usando o código ---
 const poo = new Disciplina("Programação Orientada a Objetos");
 const joana = new Estudante("Joana", "2005-05-05", "555", "E2023005");
+const maria = new Estudante("Maria", "2005-05-05", "555", "E2023005");
+const ana = new Estudante("Ana", "2005-05-05", "555", "E2023005");
+//console.log(poo)
+//console.log(joana)
 
 try { // Bloco onde você coloca o código que pode gerar exceções
-    poo.matricularEstudante(joana); //Aqui dá certo!!!
+    poo.matricularEstudante(joana); // Aqui dá certo!!!
     poo.matricularEstudante({ nome: "Objeto qualquer" }); // Isso vai falhar
+    poo.matricularEstudante(maria);
+    poo.matricularEstudante(ana); // Esse seria o terceiro estudante
     console.log("Este log não será exibido.");
 } catch (error) { // Bloco que captura e trata o erro caso algo dê errado dentro do try
     console.error("--- OCORREU UM ERRO ---");
@@ -63,3 +72,4 @@ try { // Bloco onde você coloca o código que pode gerar exceções
 } finally { // bloco que sempre é executado após o try/catch, independentemente se ocorreu erro ou não; geralmente usado para limpeza ou encerramento
     console.log("--- Bloco de matrícula finalizado. ---");
 }
+*/
